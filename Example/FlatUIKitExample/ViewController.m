@@ -55,12 +55,12 @@
     [self.navigationItem.rightBarButtonItem removeTitleShadow];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Grouped Table"
-                                                                              style:UIBarButtonItemStylePlain
-                                                                             target:self
+                                                                             style:UIBarButtonItemStylePlain
+                                                                            target:self
                                                                             action:@selector(showTableView:)];
     [self.navigationItem.leftBarButtonItem removeTitleShadow];
     
-    [self.navigationItem.leftBarButtonItem configureFlatButtonWithColor:[UIColor alizarinColor]
+    [self.navigationItem.leftBarButtonItem configureFlatButtonWithColor:[UIColor amethystColor]  // alizarinColor
                                                        highlightedColor:[UIColor pomegranateColor]
                                                            cornerRadius:3];
     
@@ -71,7 +71,7 @@
     self.alertViewButton.titleLabel.font = [UIFont boldFlatFontOfSize:16];
     [self.alertViewButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateNormal];
     [self.alertViewButton setTitleColor:[UIColor cloudsColor] forState:UIControlStateHighlighted];
-
+    
     [self.slider configureFlatSliderWithTrackColor:[UIColor silverColor]
                                      progressColor:[UIColor alizarinColor]
                                         thumbColor:[UIColor pomegranateColor]];

@@ -29,7 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
     self.title = @"Table View";
     
     //Set the separator color
@@ -60,11 +60,11 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (!cell) {
-        cell = [UITableViewCell configureFlatCellWithColor:[UIColor greenSeaColor] selectedColor:[UIColor cloudsColor] style:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    if (!cell) { // greenSeaColor
+        cell = [UITableViewCell configureFlatCellWithColor:[UIColor belizeHoleColor] selectedColor:[UIColor cloudsColor] style:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.cornerRadius = 5.f; //Optional
         if (self.tableView.style == UITableViewStyleGrouped) {
-            cell.separatorHeight = 2.f; //Optional            
+            cell.separatorHeight = 2.f; //Optional
         }
         else {
             cell.separatorHeight = 0.;
